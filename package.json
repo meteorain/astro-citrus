@@ -60,6 +60,11 @@
     "typescript": "^5.7.2"
   },
   "pnpm": {
-		"onlyBuiltDependencies": ["@biomejs/biome", "esbuild", "sharp"]
-	}
+    "onlyBuiltDependencies": [
+      "@biomejs/biome",
+      "esbuild",
+      "sharp"
+    ]
+  },
+  "packageManager": "pnpm@11.7.0"
 }

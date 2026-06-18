@@ -1,0 +1,8 @@
+# pnpm 11：审批这些 native 依赖运行其 build 脚本（下载/编译二进制）。
+# pnpm 会把需审批的包写进这里（原为 "set this to true or false" 占位），这里改成 true。
+# 否则 sharp（astro 图片优化 + astro-webmanifest 生成 PWA 图标）缺二进制会报错。
+# 本地和 Vercel 都读取此文件，两边安装时都会自动编译。
+allowBuilds:
+  '@biomejs/biome': true
+  esbuild: true
+  sharp: true
